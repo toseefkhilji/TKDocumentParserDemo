@@ -11,6 +11,7 @@
 		D2FBEFBF2C4FB8D000CA4783 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FBEFBE2C4FB8D000CA4783 /* ContentView.swift */; };
 		D2FBEFC12C4FB8D100CA4783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FBEFC02C4FB8D100CA4783 /* Assets.xcassets */; };
 		D2FBEFC52C4FB8D100CA4783 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2FBEFC42C4FB8D100CA4783 /* Preview Assets.xcassets */; };
+		D2FBEFCD2C4FB8F200CA4783 /* TKDocumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = D2FBEFCC2C4FB8F200CA4783 /* TKDocumentParser */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FBEFCD2C4FB8F200CA4783 /* TKDocumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = TKDocumentParserDemo;
+			packageProductDependencies = (
+				D2FBEFCC2C4FB8F200CA4783 /* TKDocumentParser */,
+			);
 			productName = TKDocumentParserDemo;
 			productReference = D2FBEFB92C4FB8D000CA4783 /* TKDocumentParserDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = D2FBEFB02C4FB8D000CA4783;
+			packageReferences = (
+				D2FBEFCB2C4FB8F200CA4783 /* XCRemoteSwiftPackageReference "TKDocumentParser" */,
+			);
 			productRefGroup = D2FBEFBA2C4FB8D000CA4783 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -284,7 +292,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -322,7 +330,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -359,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D2FBEFCB2C4FB8F200CA4783 /* XCRemoteSwiftPackageReference "TKDocumentParser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/toseefkhilji/TKDocumentParser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D2FBEFCC2C4FB8F200CA4783 /* TKDocumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D2FBEFCB2C4FB8F200CA4783 /* XCRemoteSwiftPackageReference "TKDocumentParser" */;
+			productName = TKDocumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D2FBEFB12C4FB8D000CA4783 /* Project object */;
 }
