@@ -40,7 +40,7 @@ struct ContentView: View {
             }) {
                 DocumentPicker(extractedText: $extractedText)
             }
-            .navigationBarTitle("TKDocParser")
+            .navigationBarTitle("TKDocumentParser")
         }
     }
 }
